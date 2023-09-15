@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Satoshi Light.ttf",
+      "sha1": "ea23468d55ad9a76958cf84a52b71b65bea35db0"
+    },
+    {
+      "path": "assets/fonts/Satoshi.ttf",
+      "sha1": "bc605aa08468cfb9a40275a6386ada56c92a5bed"
+    }
+  ]
+}
