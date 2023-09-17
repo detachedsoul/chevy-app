@@ -2,12 +2,16 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/fonts/Satoshi Light.ttf",
-      "sha1": "ea23468d55ad9a76958cf84a52b71b65bea35db0"
+      "path": "assets/fonts/false.ttf",
+      "sha1": "b825a4a89b7257537a202316b08997a2d2f00a49"
     },
     {
-      "path": "assets/fonts/Satoshi.ttf",
-      "sha1": "bc605aa08468cfb9a40275a6386ada56c92a5bed"
+      "path": "assets/fonts/Mulish Light.ttf",
+      "sha1": "32ff0d01c3ac36149f1ecf29975b6bb0fd895f99"
+    },
+    {
+      "path": "assets/fonts/Mulish.ttf",
+      "sha1": "89a41f5264672d2d1c11768d8a5325adeee0cfa3"
     }
   ]
 }

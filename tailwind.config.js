@@ -11,8 +11,9 @@ module.exports = {
                 "brand-purple": "#4637ca"
             },
             fontFamily: {
-                "satoshi": "Satoshi",
-                "satoshi-light": "'Satoshi Light'",
+                "satoshi": "'Mulish-Regular'",
+                "satoshi-light": "'Mulish Light'",
+                "satoshi-bold": "'false'",
             }
         },
     },
