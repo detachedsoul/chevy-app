@@ -1,6 +1,7 @@
 import CustomText from "@components/CustomText";
 import AppPreview from "@assets/img/onboard-app-preview.png";
 import { View, Pressable, Image, ScrollView } from "react-native";
+import CustomButton from "@components/CustomButton";
 
 const Onboarding = (): JSX.Element => {
     return (
@@ -18,14 +19,10 @@ const Onboarding = (): JSX.Element => {
                     Streamline visit process & provide a convenient platform for to manage utility bills.
                 </CustomText>
 
-                <Pressable>
-                    <CustomText customClass="bg-brand-purple p-5 text-white text-center text-lg rounded-xl">
-                        Create an Account
-                    </CustomText>
-                </Pressable>
+                <CustomButton buttonText="Create an Account" />
 
                 <Pressable className="mx-auto">
-                    <CustomText customClass="text-center text-xl" lineHeight={35}>
+                    <CustomText customClass="text-center text-lg" lineHeight={35} isBold={true}>
                         Already have an account? Sign In
                     </CustomText>
                 </Pressable>

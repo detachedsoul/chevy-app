@@ -3,17 +3,22 @@ module.exports = {
     content: [
         "./components/**/*.{tsx, ts, js, jsx}",
         "./screens/**/*.{tsx, ts, js, jsx}",
+        "./utils/**/*.{tsx, ts, js, jsx}",
         "./**/*.{tsx, ts, js, jsx}"
     ],
     theme: {
         extend: {
             colors: {
-                "brand-purple": "#4637ca"
+                "brand-purple": "#4637ca",
+                "input-bg": "#fefefe",
             },
             fontFamily: {
-                "satoshi": "'Mulish-Regular'",
-                "satoshi-light": "'Mulish Light'",
+                "mulish": "'Mulish'",
+                "mulish-light": "'Mulish Light'",
                 "satoshi-bold": "'false'",
+            },
+            borderColor: {
+                "input": "rgba(70, 55, 202, 0.10)",
             }
         },
     },
