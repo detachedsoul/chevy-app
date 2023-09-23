@@ -2,7 +2,7 @@ import CustomText from "@components/CustomText";
 import CustomButton from "@components/CustomButton";
 import classes from "@utils/customClasses";
 import { View, Pressable, TextInput, ScrollView } from "react-native";
-import { ArrowLeftIcon, EyeIcon, EyeOffIcon, CheckIcon, Scroll } from "lucide-react-native";
+import { ArrowLeftIcon, EyeIcon, EyeOffIcon, CheckIcon } from "lucide-react-native";
 import { useState } from "react";
 
 const CreateAccount = (): JSX.Element => {
@@ -10,16 +10,16 @@ const CreateAccount = (): JSX.Element => {
 
     return (
         <>
-            <View className="px-8 pt-8">
+            <View className="px-8 py-4">
                 <Pressable className="text-black">
                     <ArrowLeftIcon className="text-black text-3xl" size={30} strokeWidth={1} />
                 </Pressable>
             </View>
 
-            <ScrollView>
-                <View className="p-8" style={{ rowGap: 30 }}>
+            <ScrollView className="p-8">
+                <View style={{ rowGap: 30 }}>
                     <View style={{ rowGap: 20 }}>
-                        <View style={{ rowGap: 10 }}>
+                        <View style={{ rowGap: 5 }}>
                             <CustomText customClass="text-2xl" isBold={true}>
                                 Create an Account
                             </CustomText>
@@ -29,19 +29,21 @@ const CreateAccount = (): JSX.Element => {
                             </CustomText>
                         </View>
 
-                        <View style={{ rowGap: 25 }}>
-                            <TextInput placeholder="Email Address" className={`${classes.input}`} inputMode="email" placeholderTextColor={classes.placeholderTextColor} />
+                        <View style={{ rowGap: 30 }}>
+                            <View style={{rowGap: 20}}>
+                                <TextInput placeholder="Email Address" className={`${classes.input}`} inputMode="email" placeholderTextColor={classes.placeholderTextColor} />
 
-                            <View className="flex-row items-center relative">
-                                <TextInput placeholder="Password" className={`${classes.input} w-full`} placeholderTextColor={classes.placeholderTextColor} secureTextEntry={isPasswordVisible} />
+                                <View className="flex-row items-center relative">
+                                    <TextInput placeholder="Password" className={`${classes.input} w-full pr-12`} placeholderTextColor={classes.placeholderTextColor} secureTextEntry={isPasswordVisible} />
 
-                                <Pressable className="absolute right-4" onPress={() => setIsPasswordVisible(() => !isPasswordVisible)}>
-                                    {isPasswordVisible ? (
-                                        <EyeOffIcon className="text-brand-purple text-3xl w-auto" size={30} strokeWidth={1} />
-                                    ) : (
-                                        <EyeIcon className="text-brand-purple text-3xl w-auto" size={30} strokeWidth={1} />
-                                    )}
-                                </Pressable>
+                                    <Pressable className="absolute right-4" onPress={() => setIsPasswordVisible(() => !isPasswordVisible)}>
+                                        {isPasswordVisible ? (
+                                            <EyeOffIcon className="text-brand-purple text-3xl w-auto" size={30} strokeWidth={1} />
+                                        ) : (
+                                            <EyeIcon className="text-brand-purple text-3xl w-auto" size={30} strokeWidth={1} />
+                                        )}
+                                    </Pressable>
+                                </View>
                             </View>
 
                             <View style={{ rowGap: 20 }}>
