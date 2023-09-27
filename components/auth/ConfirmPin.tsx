@@ -1,4 +1,5 @@
 import CustomText from "@components/CustomText";
+import ConfirmDetails from "@components/auth/ConfirmDetails";
 import classes from "@utils/customClasses";
 import { View, Pressable, TextInput, ScrollView } from "react-native";
 import { ArrowLeftIcon } from "lucide-react-native";

@@ -5,7 +5,7 @@ import AccountDetails from "@components/auth/AccountDetails";
 import AccountCreationSuccessful from "@components/auth/AccountCreationSuccessful";
 import VerifyEmail from "@components/auth/VerifyEmail";
 import CreatePin from "@components/auth/CreatePin";
-import ConfirmPin from "@components/auth/CreatePin";
+import ConfirmPin from "@components/auth/ConfirmPin";
 
 const App = (): JSX.Element => {
     return (
