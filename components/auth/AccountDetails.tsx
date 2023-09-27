@@ -10,7 +10,7 @@ const AccountDetails = (): JSX.Element => {
 
     return (
         <>
-            <View className="px-8 py-4">
+            <View className="px-8 pt-8 pb-4">
                 <Pressable className="text-black">
                     <ArrowLeftIcon className="text-black text-3xl" size={30} strokeWidth={1} />
                 </Pressable>
