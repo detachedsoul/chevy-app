@@ -6,10 +6,12 @@ import AccountCreationSuccessful from "@components/auth/AccountCreationSuccessfu
 import VerifyEmail from "@components/auth/VerifyEmail";
 import CreatePin from "@components/auth/CreatePin";
 import ConfirmPin from "@components/auth/ConfirmPin";
+import SignIn from "@components/auth/SignIn";
+import WelcomeBack from "@components/auth/WelcomeBack";
 
 const App = (): JSX.Element => {
     return (
-        <ConfirmPin />
+        <WelcomeBack />
     );
 };
 
