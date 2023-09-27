@@ -16,7 +16,7 @@ const AccountDetails = (): JSX.Element => {
                 </Pressable>
             </View>
 
-            <ScrollView className="px-8 pb-12 pt-4">
+            <ScrollView className="px-8 pb-20 pt-4">
                 <View style={{ rowGap: 30 }}>
                     <View style={{ rowGap: 20 }}>
                         <View style={{ rowGap: 5 }}>

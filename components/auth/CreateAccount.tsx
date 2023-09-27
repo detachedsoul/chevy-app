@@ -16,7 +16,7 @@ const CreateAccount = (): JSX.Element => {
                 </Pressable>
             </View>
 
-            <ScrollView className="p-8">
+            <ScrollView className="px-8 pb-16 pt-4">
                 <View style={{ rowGap: 30 }}>
                     <View style={{ rowGap: 20 }}>
                         <View style={{ rowGap: 5 }}>
