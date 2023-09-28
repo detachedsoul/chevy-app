@@ -3,7 +3,7 @@ import classes from "@utils/customClasses";
 import { View, Pressable, TextInput, ScrollView } from "react-native";
 import { ArrowLeftIcon } from "lucide-react-native";
 
-const VerifyEmail = (): JSX.Element => {
+const PasswordResetEmailVerify = (): JSX.Element =>{
     return (
         <>
             <View className="px-8 pt-8 pb-4">
@@ -17,7 +17,7 @@ const VerifyEmail = (): JSX.Element => {
                     <View style={{ rowGap: 20 }}>
                         <View style={{ rowGap: 5 }}>
                             <CustomText customClass="text-2xl" isBold={true}>
-                                Confirm Email
+                                Confirm Code
                             </CustomText>
 
                             <CustomText customClass="text-lg" lineHeight={30}>
@@ -79,4 +79,4 @@ const VerifyEmail = (): JSX.Element => {
     );
 };
 
-export default VerifyEmail;
+export default PasswordResetEmailVerify;

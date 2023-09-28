@@ -55,10 +55,6 @@ const AccountDetails = (): JSX.Element => {
                                     </View>
 
                                     <TextInput placeholder="08105008304" className={`${classes.input} border-none rounded-none py-4 px-0 border-0 w-[calc(100%-27.34375%)]`} placeholderTextColor={classes.placeholderTextColor} inputMode="numeric" />
-
-                                    {/* <View className="gro mr-4">
-                                        <TextInput placeholder="08105008304" className={`${classes.input} border-none rounded-none py-4 border-0 bg-red-500 mr-4 w-auto`} placeholderTextColor={classes.placeholderTextColor} inputMode="numeric" />
-                                    </View> */}
                                 </View>
                             </View>
 

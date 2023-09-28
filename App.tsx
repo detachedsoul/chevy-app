@@ -8,10 +8,17 @@ import CreatePin from "@components/auth/CreatePin";
 import ConfirmPin from "@components/auth/ConfirmPin";
 import SignIn from "@components/auth/SignIn";
 import WelcomeBack from "@components/auth/WelcomeBack";
+import ResetPassword from "@components/auth/ResetPassword";
+import SetNewPassword from "@components/auth/SetNewPassword";
+import PasswordResetEmailVerify from "@components/auth/PasswordResetEmailVerify";
+import WelcomeBackLoginSelector from "@components/auth/WelcomeBackLoginSelector";
+import { View } from "react-native";
 
 const App = (): JSX.Element => {
     return (
-        <WelcomeBack />
+        <View className="bg-white min-h-screen">
+            <PasswordResetEmailVerify />
+        </View>
     );
 };
 
