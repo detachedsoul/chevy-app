@@ -8,7 +8,7 @@ import { BellIcon, EyeIcon, EyeOffIcon } from "lucide-react-native";
 
 const DashboardTop = (): JSX.Element => {
     return (
-        <View className="bg-brand-purple pt-8 pb-12 px-8 relative" style={{rowGap: 40}}>
+        <View className="bg-brand-purple pt-4 pb-16 px-4" style={{rowGap: 40}}>
             <View className="flex-row items-center justify-between" style={{columnGap: 20}}>
                 <View className="flex-row items-center" style={{columnGap: 10}}>
                     <Image className="object-fit object-center w-16 h-16" source={UserIcon} alt="Ezemmuo" />
@@ -37,7 +37,7 @@ const DashboardTop = (): JSX.Element => {
                 </CustomText>
             </View>
 
-            <View className="p-4 bg-white rounded-3xl border-[0.5px] border-black/10 absolute w-full inset-x-8 -bottom-[25%] flex-row justify-between">
+            <View className="p-6 bg-white rounded-2xl border-[0.5px] border-black/10 absolute w-full inset-x-4 -bottom-[25%] flex-row justify-between">
                 <Pressable style={{rowGap: 10}}>
                     <View className="rounded-xl p-4 w-auto bg-[#7b39d20a] mx-auto">
                         <Image source={FundWalletIcon} alt="Fund Wallet" />

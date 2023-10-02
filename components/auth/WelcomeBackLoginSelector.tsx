@@ -25,13 +25,13 @@ const WelcomeBackLoginSelector = (): JSX.Element => {
                     </View>
 
                     <View style={{ rowGap: 30 }}>
-                        <Pressable className="border-black/10 rounded-full p-6" style={{ borderWidth: 0.5, columnGap: 10 }}>
+                        <Pressable className="border-black/10 rounded-full border-[0.5px] p-6" style={{ columnGap: 10 }}>
                             <CustomText customClass="text-center text-lg" isBold={true}>
                                 Use phone or email
                             </CustomText>
                         </Pressable>
 
-                        <Pressable className="border-black/10 rounded-full py-5 px-6 flex-row items-center justify-center" style={{ borderWidth: 0.5, columnGap: 10 }}>
+                        <Pressable className="border-black/10 rounded-full py-5 px-6 flex-row items-center justify-center border-[0.5px]" style={{ columnGap: 10 }}>
                             <Image className="h-8 w-8" source={GoogleIcon} alt="Continue with Google" />
 
                             <CustomText customClass="text-center text-lg" isBold={true}>
