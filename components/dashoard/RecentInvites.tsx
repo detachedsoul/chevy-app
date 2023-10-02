@@ -10,12 +10,12 @@ const RecentInvites = (): JSX.Element => {
     return (
         <View style={{ rowGap: 30 }}>
             <View className="flex-row justify-between">
-                <CustomText customClass="text-black font-semibold text-lg">
+                <CustomText customClass="text-black font-semibold text-xl">
                     Recent Invites
                 </CustomText>
 
                 <Pressable>
-                    <CustomText customClass="text-lg font-semibold text-[#979797]">
+                    <CustomText customClass="text-xl font-semibold text-[#979797]">
                         View All
                     </CustomText>
                 </Pressable>

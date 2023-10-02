@@ -11,6 +11,8 @@ module.exports = {
             colors: {
                 "brand-purple": "#4637ca",
                 "input-bg": "#fefefe",
+                "brand-red": "#ff0000",
+                "brand-green": "#34c759"
             },
             fontFamily: {
                 "mulish": "'Mulish'",

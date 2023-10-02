@@ -1,6 +1,6 @@
 import DashboardTop from "@components/dashoard/DashboardTop";
 import RecentInvites from "@components/dashoard/RecentInvites";
-import CustomText from "@components/CustomText";
+import RecentActivities from "@components/dashoard/RecentActivities";
 import { ScrollView, View, Pressable } from "react-native";
 
 const Dashboard = (): JSX.Element => {
@@ -8,8 +8,10 @@ const Dashboard = (): JSX.Element => {
         <ScrollView className="min-h-screen bg-white">
             <DashboardTop />
 
-            <View className="mt-[25%] px-4">
+            <View className="mt-[25%] px-4 pb-20" style={{rowGap: 50}}>
                 <RecentInvites />
+
+                <RecentActivities />
             </View>
         </ScrollView>
     );
