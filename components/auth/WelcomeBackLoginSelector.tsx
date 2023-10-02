@@ -1,7 +1,6 @@
 import CustomText from "@components/CustomText";
-import classes from "@utils/customClasses";
 import GoogleIcon from "@assets/img/google-email.png";
-import { View, Pressable, TextInput, ScrollView, Image } from "react-native";
+import { View, Pressable, ScrollView, Image } from "react-native";
 import { ArrowLeftIcon } from "lucide-react-native";
 
 const WelcomeBackLoginSelector = (): JSX.Element => {
@@ -46,4 +45,4 @@ const WelcomeBackLoginSelector = (): JSX.Element => {
     );
 };
 
-            export default WelcomeBackLoginSelector;
+export default WelcomeBackLoginSelector;

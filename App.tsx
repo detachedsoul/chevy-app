@@ -12,12 +12,13 @@ import ResetPassword from "@components/auth/ResetPassword";
 import SetNewPassword from "@components/auth/SetNewPassword";
 import PasswordResetEmailVerify from "@components/auth/PasswordResetEmailVerify";
 import WelcomeBackLoginSelector from "@components/auth/WelcomeBackLoginSelector";
+import Dashboard from "@components/dashoard/Dashboard";
 import { View } from "react-native";
 
 const App = (): JSX.Element => {
     return (
         <View className="bg-white min-h-screen">
-            <PasswordResetEmailVerify />
+            <Dashboard />
         </View>
     );
 };
