@@ -1,21 +1,48 @@
 import CustomText from "@components/CustomText";
+import useNav from "@store/useNav";
 import User from "@assets/img/user-profile-pic.png";
 import VerifiedBadge from "@assets/img/verified-badge.png";
 import LevelStar from "@assets/img/medalstar.png";
 import SideBarAdsBanner from "@assets/img/sidebar-ads-banner.png";
+import { useEffect, useRef, useState } from "react";
 import { UserIcon, MessageCircleIcon, PlusSquareIcon, HeadphonesIcon, AwardIcon } from "lucide-react-native";
-import { ScrollView, View, Image, Pressable } from "react-native";
+import { ScrollView, View, Image, Pressable, Animated, Easing, Dimensions } from "react-native";
 
 const ProfileSidebar = (): JSX.Element => {
+    const { isToggleOn } = useNav();
+    const translateXValue = useRef(new Animated.Value(-200)).current;
+    const [initialRender, setInitialRender] = useState(true);
+
+    const { width } = Dimensions.get('window');
+
+    useEffect(() => {
+        if (!initialRender) {
+            const toValue = isToggleOn ? 0 : -width;
+
+            Animated.timing(translateXValue, {
+                toValue,
+                easing: Easing.linear,
+                useNativeDriver: false,
+            }).start();
+        } else {
+            setInitialRender(false);
+        }
+    }, [isToggleOn, translateXValue, initialRender]);
+
     return (
-        <View className="absolute bg-white w-4/5 h-full border-r-[0.5px] border-black/10 shadow-xl">
+        <Animated.View
+            className="absolute bg-white w-4/5 h-full border-r-[0.5px] border-black/10 shadow-xl"
+            style={{
+                transform: [{ translateX: translateXValue }]
+            }}
+        >
             <ScrollView>
                 <View className="px-4 pt-8 pb-14" style={{ rowGap: 50 }}>
                     <View className="pb-8 border-b-[0.5px] border-[#0000004d]" style={{ rowGap: 20 }}>
                         <Image className="w-20 h-20" source={User} alt="Dominic Praise" />
 
-                        <View style={{rowGap: 10}}>
-                            <View className="flex-row items-center" style={{columnGap: 8}}>
+                        <View style={{ rowGap: 10 }}>
+                            <View className="flex-row items-center" style={{ columnGap: 8 }}>
                                 <CustomText customClass="text-black font-bold text-xl" isBold={true}>
                                     Dominic Praise
                                 </CustomText>
@@ -109,7 +136,7 @@ const ProfileSidebar = (): JSX.Element => {
                     </View>
                 </View>
             </ScrollView>
-        </View>
+        </Animated.View>
     );
 };
 
