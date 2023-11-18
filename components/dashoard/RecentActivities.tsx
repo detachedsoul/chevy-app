@@ -6,12 +6,12 @@ const RecentActivies = (): JSX.Element => {
     return (
         <View style={{ rowGap: 30 }}>
             <View className="flex-row justify-between">
-                <CustomText customClass="text-black font-bold text-lg">
+                <CustomText customClass="text-black font-bold text-lg" isBold={true}>
                     Recent Activities
                 </CustomText>
 
                 <Pressable>
-                    <CustomText customClass="text-lg font-bold text-[#979797]">
+                    <CustomText customClass="text-lg font-bold text-[#979797]" isBold={true}>
                         View All
                     </CustomText>
                 </Pressable>

@@ -1,13 +1,15 @@
-import DashboardTop from "@components/dashoard/DashboardTop";
-import RecentInvites from "@components/dashoard/RecentInvites";
-import RecentActivities from "@components/dashoard/RecentActivities";
-import { ScrollView, View, Pressable } from "react-native";
-import FooterNavigation from "@components/dashoard/FooterNavigation";
+import React from 'react';
+import { ScrollView, View } from 'react-native';
+import DashboardTop from '@components/dashoard/DashboardTop';
+import RecentInvites from '@components/dashoard/RecentInvites';
+import RecentActivities from '@components/dashoard/RecentActivities';
+import FooterNavigation from '@components/dashoard/FooterNavigation';
+import ProfileSidebar from '@components/dashoard/ProfileSidebar';
 
 const Dashboard = (): JSX.Element => {
     return (
         <>
-            <ScrollView className="min-h-screen bg-white">
+            <ScrollView>
                 <DashboardTop />
 
                 <View className="mt-[25%] mb-20 px-4 pb-20" style={{ rowGap: 50 }}>
@@ -18,6 +20,8 @@ const Dashboard = (): JSX.Element => {
             </ScrollView>
 
             <FooterNavigation />
+
+            <ProfileSidebar />
         </>
     );
 };
