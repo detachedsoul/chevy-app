@@ -1,7 +1,7 @@
 import CustomText from "@components/CustomText";
+import CustomButton from "@components/CustomButton";
 import AppPreview from "@assets/img/onboard-app-preview.png";
 import { View, Pressable, Image, ScrollView } from "react-native";
-import CustomButton from "@components/CustomButton";
 
 const Onboarding = (): JSX.Element => {
     return (
@@ -16,7 +16,7 @@ const Onboarding = (): JSX.Element => {
                 </CustomText>
 
                 <CustomText customClass="text-lg text-center" isLight={true} lineHeight={35}>
-                    Streamline visit process & provide a convenient platform for to manage utility bills.
+                    Streamline visit process & provide a convenient platform to manage utility bills.
                 </CustomText>
 
                 <CustomButton buttonText="Create an Account" />

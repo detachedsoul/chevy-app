@@ -5,7 +5,7 @@ import { PlusIcon, HomeIcon, UsersIcon, CastIcon } from "lucide-react-native";
 
 const FooterNavigation = (): JSX.Element => {
     return (
-        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false} className="absolute w-full bottom-6">
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false} className="absolute w-full bottom-0">
             <View className="flex-row items-center justify-between p-4 bg-white mx-auto" style={{ columnGap: 40 }}>
                 <View style={{ rowGap: 5 }}>
                     <HomeIcon className="text-[#9a9fa2] mx-auto" size={30} strokeWidth={1} />

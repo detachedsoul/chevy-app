@@ -1,10 +1,9 @@
-import React from 'react';
-import { ScrollView, View } from 'react-native';
-import DashboardTop from '@components/dashoard/DashboardTop';
-import RecentInvites from '@components/dashoard/RecentInvites';
-import RecentActivities from '@components/dashoard/RecentActivities';
-import FooterNavigation from '@components/dashoard/FooterNavigation';
-import ProfileSidebar from '@components/dashoard/ProfileSidebar';
+import DashboardTop from "@components/dashboard/DashboardTop";
+import RecentInvites from "@components/dashboard/RecentInvites";
+import RecentActivities from "@components/dashboard/RecentActivities";
+import FooterNavigation from "@components/dashboard/FooterNavigation";
+import ProfileSidebar from "@components/dashboard/ProfileSidebar";
+import { ScrollView, View } from "react-native";
 
 const Dashboard = (): JSX.Element => {
     return (
