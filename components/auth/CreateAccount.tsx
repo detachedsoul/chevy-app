@@ -5,13 +5,13 @@ import { View, Pressable, TextInput, ScrollView } from "react-native";
 import { ArrowLeftIcon, EyeIcon, EyeOffIcon, CheckIcon } from "lucide-react-native";
 import { useState } from "react";
 
-const CreateAccount = (): JSX.Element => {
+const CreateAccount = ({navigation}): JSX.Element => {
     const [isPasswordVisible, setIsPasswordVisible] = useState(true);
 
     return (
         <>
             <View className="px-8 pt-8 pb-4">
-                <Pressable className="text-black">
+                <Pressable className="text-black" onPressIn={() => navigation.goBack()}>
                     <ArrowLeftIcon className="text-black text-3xl" size={30} strokeWidth={1} />
                 </Pressable>
             </View>
@@ -78,7 +78,7 @@ const CreateAccount = (): JSX.Element => {
                                 </View>
                             </View>
 
-                            <CustomButton buttonText="Create an Account" />
+                            <CustomButton buttonText="Create an Account" onClick={() => navigation.goBack()} />
                         </View>
                     </View>
                 </View>

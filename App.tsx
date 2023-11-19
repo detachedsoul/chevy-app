@@ -13,13 +13,27 @@ import SetNewPassword from "@components/auth/SetNewPassword";
 import PasswordResetEmailVerify from "@components/auth/PasswordResetEmailVerify";
 import WelcomeBackLoginSelector from "@components/auth/WelcomeBackLoginSelector";
 import Dashboard from "@components/dashboard/Dashboard";
-import { View } from "react-native";
+
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const App = (): JSX.Element => {
+    const Stack = createNativeStackNavigator();
+
     return (
-        // <View className="bg-white min-h-screen">
-            <Dashboard />
-        // </View>
+        <NavigationContainer>
+            <Stack.Navigator
+                initialRouteName="Onboarding"
+                screenOptions={{
+                    headerShown: false
+                }}
+            >
+                <Stack.Screen name="Onboarding" component={Onboarding} />
+                <Stack.Screen name="CreateAccount" component={CreateAccount} />
+                <Stack.Screen name="AccountDetails" component={AccountDetails} />
+                <Stack.Screen name="SignIn" component={SignIn} />
+            </Stack.Navigator>
+        </NavigationContainer>
     );
 };
 
